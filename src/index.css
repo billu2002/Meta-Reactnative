@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Markazi+Text:wght@500;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Markazi Text', 'Karla', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+  background-color: #edefee;
+  max-width: 1440px;
+  
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    margin : auto;
+
+}
+
+.list {
+  display: flex;
+
+}
+
+.list li {
+  padding: 0 16px;
+
+}
+
+
+a {
+  font-family: 'Karla';
+  text-decoration: none;
+  font-size: 18px ;
+  font-weight: bold;
+  color: #333333;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #46c95e;
+}
+
+
+p {
+  font-family: 'Karla';
+  font-size: 18px;
+}
+
+img {
+  border-radius: 20px;
+}
+
+.header img {
+  padding : 10px 0;
+}
+
+h1, h2 , h3 {
+  font-family: 'Markazi Text', 'Karla', serif;
+  line-height: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+
+
+ul > li {
+  list-style: none;
+
+}
+
+.hamburger {
+  display: none;
+}
+
+.scale-card:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+
+code {
+  font-family: karla, markazi-text, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+@media screen and (max-width: 1040px) {
+
+
+  .header {
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .list-active {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 56%;
+      position: absolute;
+      top: 80px;
+      right: -0%;
+      padding-top: 20px;
+      z-index: 3;
+      transition: 0.8s;
+      background: #e8ebe6;
+
+    }
+    .list {
+      display: none;
+    }
+
+    .list-active li {
+      padding: 1rem 0;
+
+
+  }
+    .list-active li a {
+      font-size: 20px;
+
+    }
+     
+  .hamburger {
+      display: initial;
+      margin-right: 20px;
+  }
+
+  .img-hero {
+    display: none;
+  }
+
+  .hero {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero p {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card-special {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .ratings {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .rat-card {
+    margin: 0;
+  }
+
+  .desc {
+    display: flex;
+    flex-direction: column !important;
+    
+    gap: 10px;
+
+  }
+
+  .img-disc {
+    display: none;
+  }
+
+  .img-disc-two {
+    margin-bottom: 20px;
+    margin-top: -60px;
+ 
+  }
+
+  .foot ul{
+    transform: scale(0.85);
+  }
+
+}
+
+@media screen and (min-width: 1041px) {
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    margin : auto;
+
+}
+
+  .list {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
+  
+  }
